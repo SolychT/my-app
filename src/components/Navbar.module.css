@@ -4,4 +4,8 @@
     }
 .item{
     color: white;
-}    
+}  
+
+.item.active{
+    color: gold;
+}
