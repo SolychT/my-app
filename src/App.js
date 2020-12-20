@@ -2,12 +2,13 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import Profile from './components/Profile/Profile';
+import ProfileInfo from './components/Profile/Profile';
 import Dialogs from "./components/Navbar/Dialogs/Dialogs";
 import Music from "./components/Navbar/Music/Music";
 import News from "./components/Navbar/News/News";
 import Settings from "./components/Navbar/Settings/Settings";
 import {BrowserRouter, Route} from "react-router-dom";
+import Profile from "./components/Profile/Profile";
 
 
 const App =() => {
@@ -17,12 +18,13 @@ const App =() => {
           <Header />
           <Navbar />
           <div className = 'app-wrapper-content'>
-              <Route path='/dialogs' component={Dialogs}/>
-              <Route path='/profile' component={Profile}/>
+              <Route path='/Dialogs' component={Dialogs}/>
+              <Route path='/Profile' component={Profile}/>
               <Route path='/News' component={News}/>
               <Route path='/Music' component={Music}/>
               <Route path='/Settings' component={Settings}/>
           </div>
+
         </div>
       </BrowserRouter>
   );
